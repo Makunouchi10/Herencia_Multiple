@@ -7,7 +7,6 @@ class JefeDeArea(Empleado, Area):
         Area.__init__(self, ubicacion, num_empleados)    # Inicializa a través de Area
         self._equipo = equipo
 
-    # Método específico para el Jefe de Área
     def mostrar_informacion(self):
         area_info = super().mostrar_informacion()
         return f"{area_info}, Equipo de trabajo: {self._equipo}"

@@ -9,6 +9,5 @@ class Departamento:
     def set_ubicacion(self, ubicacion):
         self._ubicacion = ubicacion
 
-    # Método para mostrar información del departamento
     def mostrar_informacion(self):
         return f"Ubicación: {self._ubicacion}"

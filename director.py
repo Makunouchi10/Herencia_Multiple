@@ -7,7 +7,6 @@ class Director(Empleado, Area):
         Area.__init__(self, ubicacion, num_empleados)
         self._presupuesto = presupuesto
 
-    # Método específico para el Director
     def mostrar_informacion(self):
         area_info = super().mostrar_informacion()
         return f"{area_info}, Presupuesto: {self._presupuesto}"

@@ -12,7 +12,6 @@ class Area(Departamento):
     def set_num_empleados(self, num_empleados):
         self._num_empleados = num_empleados
 
-    # Método para mostrar información del área
     def mostrar_informacion(self):
         departamento_info = super().mostrar_informacion()
         return f"{departamento_info}, Número de empleados: {self._num_empleados}"

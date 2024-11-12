@@ -16,6 +16,5 @@ class Persona:
     def set_edad(self, edad):
         self._edad = edad
 
-    # Método para mostrar información básica de la persona
     def mostrar_informacion(self):
         return f"Nombre: {self._nombre}, Edad: {self._edad}"

@@ -12,7 +12,6 @@ class Empleado(Persona):
     def set_salario(self, salario):
         self._salario = salario
 
-    # Método para mostrar información del empleado
     def mostrar_informacion(self):
         persona_info = super().mostrar_informacion()
         return f"{persona_info}, Salario: {self._salario}"

@@ -7,7 +7,6 @@ class Gerente(Empleado, Area):
         Area.__init__(self, ubicacion, num_empleados)    # Inicializa a través de Area
         self._proyectos = proyectos
 
-    # Método específico para el Gerente
     def mostrar_informacion(self):
         area_info = super().mostrar_informacion()  # Llama a mostrar_informacion de Area
         return f"{area_info}, Proyectos a cargo: {self._proyectos}"
